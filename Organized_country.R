@@ -6,9 +6,9 @@ library(DBI)
 library(RMySQL)
 
 connect <- DBI::dbConnect(RMySQL::MySQL(), dbname = "group_rpg",
-                     host = "agron5106.cqli556wsu0m.us-east-1.rds.amazonaws.com",
-                     post = 3306,
-                     username = "r12621216", password = "Flash88156")
+                     host = "",
+                     post = ,
+                     username = "", password = "")
 dbListTables(connect)
 User_info <- dbGetQuery(connect,"SELECT Id,
                                         DisplayName,
